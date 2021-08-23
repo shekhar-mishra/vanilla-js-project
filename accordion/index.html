@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Accordion With HTML And Javascript
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="accordion">
+            <div class="content-box">
+                <div class="label">List One</div>
+                <div class="content">
+                    <p>
+                        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+
+                    </p>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="label">List Two</div>
+                <div class="content">
+                    <p>
+                        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const accordion= document.getElementsByClassName('content-box')
+         for(let i=0;i<accordion.length;i++){
+            accordion[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</html>
