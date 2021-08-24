@@ -1,0 +1,14 @@
+.popover_content {
+    visibility: hidden;
+    width: 50%;
+    border: 1px solid grey;
+    height: 92px;
+    position: absolute;
+    left: 20px;
+}
+.popover_message {
+    text-align: center;
+}
+.popover_wrapper:hover  .popover_content{
+    visibility: visible;
+}
